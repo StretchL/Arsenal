@@ -1,0 +1,1831 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Ui = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local BtnList = Instance.new("Frame")
+local LISTHOLDER = Instance.new("TextLabel")
+local UIListLayout = Instance.new("UIListLayout")
+local Main = Instance.new("TextButton")
+local Visual = Instance.new("TextButton")
+local Weapon = Instance.new("TextButton")
+local Aimbot = Instance.new("TextButton")
+local Sliders = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Slider = Instance.new("Frame")
+local Slide = Instance.new("Frame")
+local stuff = Instance.new("TextLabel")
+local Aimbots = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local Aimpart = Instance.new("Frame")
+local Speed_2 = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local Speed_3 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local ImageButton = Instance.new("ImageButton")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local FpsLabel = Instance.new("TextLabel")
+local Visuals = Instance.new("Frame")
+local Boxes = Instance.new("TextButton")
+local TextLabel_9 = Instance.new("TextLabel")
+local Chams = Instance.new("TextButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local Tracers = Instance.new("TextButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local Healthbar = Instance.new("TextButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local Healthbar_2 = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
+local Weapon_2 = Instance.new("Frame")
+local Recoil = Instance.new("TextButton")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local Mains = Instance.new("Frame")
+local Speed_4 = Instance.new("TextButton")
+local TextLabel_16 = Instance.new("TextLabel")
+local InfiniteJump = Instance.new("TextButton")
+local TextLabel_17 = Instance.new("TextLabel")
+local AntiAim = Instance.new("TextButton")
+local TextLabel_18 = Instance.new("TextLabel")
+local AntiAim_2 = Instance.new("TextButton")
+local TextLabel_19 = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local ImageButton_2 = Instance.new("ImageButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Frame.BackgroundTransparency = 0.050
+Frame.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Frame.Position = UDim2.new(0, 843, 0, 269)
+Frame.Size = UDim2.new(0, 507, 0, 24)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0, 46, 0, 24)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Weed"
+TextLabel.TextColor3 = Color3.fromRGB(0, 85, 0)
+TextLabel.TextSize = 17.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0767716542, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 24, 0, 24)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "OS"
+TextLabel_2.TextColor3 = Color3.fromRGB(158, 158, 158)
+TextLabel_2.TextSize = 17.000
+
+Ui.Name = "Ui"
+Ui.Parent = Frame
+Ui.BackgroundColor3 = Color3.fromRGB(18, 18, 18)
+Ui.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Ui.Position = UDim2.new(0, 0, 0, 23)
+Ui.Size = UDim2.new(1, 0, 15.25, 0)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(238, 238, 238)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(245, 245, 245))}
+UIGradient.Parent = Ui
+
+BtnList.Name = "BtnList"
+BtnList.Parent = Ui
+BtnList.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+BtnList.BorderColor3 = Color3.fromRGB(0, 85, 0)
+BtnList.Position = UDim2.new(0.0315271243, 0, 0.103825137, 0)
+BtnList.Size = UDim2.new(0, 153, 0, 313)
+
+LISTHOLDER.Name = "LISTHOLDER"
+LISTHOLDER.Parent = BtnList
+LISTHOLDER.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LISTHOLDER.BackgroundTransparency = 1.000
+LISTHOLDER.Size = UDim2.new(0, 153, 0, 16)
+LISTHOLDER.Font = Enum.Font.GothamBold
+LISTHOLDER.Text = "Tab List"
+LISTHOLDER.TextColor3 = Color3.fromRGB(0, 85, 0)
+LISTHOLDER.TextSize = 14.000
+
+UIListLayout.Parent = BtnList
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 2)
+
+Main.Name = "Main"
+Main.Parent = BtnList
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0, 0, 0.0575079881, 0)
+Main.Size = UDim2.new(0, 153, 0, 40)
+Main.Font = Enum.Font.Ubuntu
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(0, 85, 0)
+Main.TextSize = 14.000
+
+Visual.Name = "Visual"
+Visual.Parent = BtnList
+Visual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Visual.BackgroundTransparency = 1.000
+Visual.Position = UDim2.new(0, 0, 0.166134179, 0)
+Visual.Size = UDim2.new(0, 153, 0, 32)
+Visual.Font = Enum.Font.Ubuntu
+Visual.Text = "Visuals"
+Visual.TextColor3 = Color3.fromRGB(0, 85, 0)
+Visual.TextSize = 14.000
+
+Weapon.Name = "Weapon"
+Weapon.Parent = BtnList
+Weapon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Weapon.BackgroundTransparency = 1.000
+Weapon.Position = UDim2.new(0, 0, 0.230031952, 0)
+Weapon.Size = UDim2.new(0, 153, 0, 37)
+Weapon.Font = Enum.Font.Ubuntu
+Weapon.Text = "Weapon"
+Weapon.TextColor3 = Color3.fromRGB(0, 85, 0)
+Weapon.TextSize = 14.000
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = BtnList
+Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Aimbot.BackgroundTransparency = 1.000
+Aimbot.Position = UDim2.new(0, 0, 0.230031952, 0)
+Aimbot.Size = UDim2.new(0, 153, 0, 37)
+Aimbot.Font = Enum.Font.Ubuntu
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(0, 85, 0)
+Aimbot.TextSize = 14.000
+
+Sliders.Name = "Sliders"
+Sliders.Parent = Ui
+Sliders.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Sliders.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Sliders.Position = UDim2.new(0.40157479, 0, 0.103825137, 0)
+Sliders.Size = UDim2.new(0, 293, 0, 94)
+
+TextLabel_3.Parent = Sliders
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.156996593, 0, 0, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 18)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Fov Slider"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 85, 0)
+TextLabel_3.TextSize = 14.000
+
+Slider.Name = "Slider"
+Slider.Parent = Sliders
+Slider.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Slider.BorderColor3 = Color3.fromRGB(44, 44, 44)
+Slider.Position = UDim2.new(0.0757777467, 0, 0.434224755, 0)
+Slider.Size = UDim2.new(0, 248, 0, 11)
+
+Slide.Name = "Slide"
+Slide.Parent = Slider
+Slide.BackgroundColor3 = Color3.fromRGB(0, 85, 0)
+Slide.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Slide.Position = UDim2.new(-0.00169323338, 0, 0, 0)
+Slide.Size = UDim2.new(0, 120, 0, 11)
+
+stuff.Name = "stuff"
+stuff.Parent = Slider
+stuff.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+stuff.BackgroundTransparency = 1.000
+stuff.Position = UDim2.new(0.256371021, 0, -0.583144426, 0)
+stuff.Size = UDim2.new(0, 119, 0, 25)
+stuff.Visible = false
+stuff.Font = Enum.Font.SourceSans
+stuff.Text = ""
+stuff.TextColor3 = Color3.fromRGB(255, 255, 255)
+stuff.TextSize = 17.000
+
+Aimbots.Name = "Aimbots"
+Aimbots.Parent = Ui
+Aimbots.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Aimbots.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Aimbots.Position = UDim2.new(0.40157479, 0, 0.401639342, 0)
+Aimbots.Size = UDim2.new(0, 293, 0, 204)
+Aimbots.Visible = false
+
+Speed.Name = "Speed"
+Speed.Parent = Aimbots
+Speed.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.Position = UDim2.new(0.0511945412, 0, 0.0490196124, 0)
+Speed.Size = UDim2.new(0, 14, 0, 14)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = ""
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 14.000
+
+TextLabel_4.Parent = Speed
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_4.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_4.Font = Enum.Font.Code
+TextLabel_4.Text = "Aimbot"
+TextLabel_4.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_4.TextSize = 13.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Aimpart.Name = "Aimpart"
+Aimpart.Parent = Aimbots
+Aimpart.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Aimpart.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Aimpart.Position = UDim2.new(0.0511945374, 0, 0.176470593, 0)
+Aimpart.Size = UDim2.new(0, 263, 0, 154)
+Aimpart.Visible = false
+
+Speed_2.Name = "Speed"
+Speed_2.Parent = Aimpart
+Speed_2.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Speed_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed_2.Position = UDim2.new(0.0511945412, 0, 0.0490196124, 0)
+Speed_2.Size = UDim2.new(0, 14, 0, 14)
+Speed_2.Font = Enum.Font.SourceSans
+Speed_2.Text = ""
+Speed_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed_2.TextSize = 14.000
+
+TextLabel_5.Parent = Speed_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_5.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_5.Font = Enum.Font.Code
+TextLabel_5.Text = "Head"
+TextLabel_5.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_5.TextSize = 13.000
+TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+Speed_3.Name = "Speed"
+Speed_3.Parent = Aimpart
+Speed_3.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Speed_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed_3.Position = UDim2.new(0.0511945412, 0, 0.256811798, 0)
+Speed_3.Size = UDim2.new(0, 14, 0, 14)
+Speed_3.Font = Enum.Font.SourceSans
+Speed_3.Text = ""
+Speed_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed_3.TextSize = 14.000
+
+TextLabel_6.Parent = Speed_3
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_6.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_6.Font = Enum.Font.Code
+TextLabel_6.Text = "Uppder Chest"
+TextLabel_6.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_6.TextSize = 13.000
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+ImageButton.Parent = Aimbots
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.Position = UDim2.new(0.279863477, 0, 0.0343137272, 0)
+ImageButton.Size = UDim2.new(0, 31, 0, 19)
+ImageButton.Image = "rbxassetid://7072720870"
+ImageButton.ImageColor3 = Color3.fromRGB(0, 108, 0)
+ImageButton.ScaleType = Enum.ScaleType.Fit
+
+TextLabel_7.Parent = Ui
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0315271281, 0, 0.0218579229, 0)
+TextLabel_7.Size = UDim2.new(0, 217, 0, 18)
+TextLabel_7.Font = Enum.Font.Ubuntu
+TextLabel_7.Text = "Welcome To WeedOS, This Is In Beta"
+TextLabel_7.TextColor3 = Color3.fromRGB(0, 85, 0)
+TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Parent = Ui
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.4043082, 0, -0.0628415272, 0)
+TextLabel_8.Size = UDim2.new(0, 96, 0, 20)
+TextLabel_8.Font = Enum.Font.Ubuntu
+TextLabel_8.Text = ""
+TextLabel_8.TextColor3 = Color3.fromRGB(0, 85, 0)
+TextLabel_8.TextSize = 14.000
+
+FpsLabel.Name = "FpsLabel"
+FpsLabel.Parent = TextLabel_8
+FpsLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FpsLabel.BackgroundTransparency = 1.000
+FpsLabel.Position = UDim2.new(-0.541871905, 0, -0.650990427, 0)
+FpsLabel.Size = UDim2.new(0, 200, 0, 50)
+FpsLabel.Font = Enum.Font.ArialBold
+FpsLabel.Text = "Fps"
+FpsLabel.TextColor3 = Color3.fromRGB(0, 170, 0)
+FpsLabel.TextSize = 14.000
+
+Visuals.Name = "Visuals"
+Visuals.Parent = Ui
+Visuals.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Visuals.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Visuals.Position = UDim2.new(0.40157479, 0, 0.401639342, 0)
+Visuals.Size = UDim2.new(0, 293, 0, 204)
+Visuals.Visible = false
+
+Boxes.Name = "Boxes"
+Boxes.Parent = Visuals
+Boxes.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Boxes.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Boxes.Position = UDim2.new(0.0511945412, 0, 0.0490196124, 0)
+Boxes.Size = UDim2.new(0, 14, 0, 14)
+Boxes.Font = Enum.Font.SourceSans
+Boxes.Text = ""
+Boxes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Boxes.TextSize = 14.000
+
+TextLabel_9.Parent = Boxes
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_9.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_9.Font = Enum.Font.Code
+TextLabel_9.Text = "Boxes"
+TextLabel_9.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_9.TextSize = 13.000
+TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+Chams.Name = "Chams"
+Chams.Parent = Visuals
+Chams.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Chams.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Chams.Position = UDim2.new(0.0511945412, 0, 0.196078435, 0)
+Chams.Size = UDim2.new(0, 14, 0, 14)
+Chams.Font = Enum.Font.SourceSans
+Chams.Text = ""
+Chams.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chams.TextSize = 14.000
+
+TextLabel_10.Parent = Chams
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_10.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_10.Font = Enum.Font.Code
+TextLabel_10.Text = "Chams"
+TextLabel_10.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_10.TextSize = 13.000
+TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+Tracers.Name = "Tracers"
+Tracers.Parent = Visuals
+Tracers.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Tracers.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Tracers.Position = UDim2.new(0.0511945412, 0, 0.343137264, 0)
+Tracers.Size = UDim2.new(0, 14, 0, 14)
+Tracers.Font = Enum.Font.SourceSans
+Tracers.Text = ""
+Tracers.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tracers.TextSize = 14.000
+
+TextLabel_11.Parent = Tracers
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_11.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_11.Font = Enum.Font.Code
+TextLabel_11.Text = "Tracers"
+TextLabel_11.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_11.TextSize = 13.000
+TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+Healthbar.Name = "Healthbar"
+Healthbar.Parent = Visuals
+Healthbar.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Healthbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Healthbar.Position = UDim2.new(0.0511945412, 0, 0.647058845, 0)
+Healthbar.Size = UDim2.new(0, 14, 0, 14)
+Healthbar.Font = Enum.Font.SourceSans
+Healthbar.Text = ""
+Healthbar.TextColor3 = Color3.fromRGB(0, 0, 0)
+Healthbar.TextSize = 14.000
+
+TextLabel_12.Parent = Healthbar
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_12.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_12.Font = Enum.Font.Code
+TextLabel_12.Text = "Healthbar"
+TextLabel_12.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_12.TextSize = 13.000
+TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+Healthbar_2.Name = "Healthbar"
+Healthbar_2.Parent = Visuals
+Healthbar_2.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Healthbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Healthbar_2.Position = UDim2.new(0.0511945412, 0, 0.495098054, 0)
+Healthbar_2.Size = UDim2.new(0, 14, 0, 14)
+Healthbar_2.Font = Enum.Font.SourceSans
+Healthbar_2.Text = ""
+Healthbar_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Healthbar_2.TextSize = 14.000
+
+TextLabel_13.Parent = Healthbar_2
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_13.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_13.Font = Enum.Font.Code
+TextLabel_13.Text = "Fov Circle"
+TextLabel_13.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_13.TextSize = 13.000
+TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+
+Weapon_2.Name = "Weapon"
+Weapon_2.Parent = Ui
+Weapon_2.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Weapon_2.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Weapon_2.Position = UDim2.new(0.40157479, 0, 0.401639342, 0)
+Weapon_2.Size = UDim2.new(0, 293, 0, 204)
+Weapon_2.Visible = false
+
+Recoil.Name = "Recoil"
+Recoil.Parent = Weapon_2
+Recoil.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Recoil.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Recoil.Position = UDim2.new(0.0511945412, 0, 0.0490196124, 0)
+Recoil.Size = UDim2.new(0, 14, 0, 14)
+Recoil.Font = Enum.Font.SourceSans
+Recoil.Text = ""
+Recoil.TextColor3 = Color3.fromRGB(0, 0, 0)
+Recoil.TextSize = 14.000
+
+TextLabel_14.Parent = Recoil
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_14.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_14.Font = Enum.Font.Code
+TextLabel_14.Text = "No Recoil"
+TextLabel_14.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_14.TextSize = 13.000
+TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_15.Parent = Ui
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.846122801, 0, 0.0218579229, 0)
+TextLabel_15.Size = UDim2.new(0, 81, 0, 18)
+TextLabel_15.Font = Enum.Font.Ubuntu
+TextLabel_15.Text = "Arsenal"
+TextLabel_15.TextColor3 = Color3.fromRGB(0, 85, 0)
+TextLabel_15.TextSize = 14.000
+
+Mains.Name = "Mains"
+Mains.Parent = Ui
+Mains.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+Mains.BorderColor3 = Color3.fromRGB(0, 85, 0)
+Mains.Position = UDim2.new(0.40157479, 0, 0.401639342, 0)
+Mains.Size = UDim2.new(0, 293, 0, 204)
+
+Speed_4.Name = "Speed"
+Speed_4.Parent = Mains
+Speed_4.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+Speed_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed_4.Position = UDim2.new(0.0511945412, 0, 0.0490196124, 0)
+Speed_4.Size = UDim2.new(0, 14, 0, 14)
+Speed_4.Font = Enum.Font.SourceSans
+Speed_4.Text = ""
+Speed_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed_4.TextSize = 14.000
+
+TextLabel_16.Parent = Speed_4
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_16.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_16.Font = Enum.Font.Code
+TextLabel_16.Text = "Speed"
+TextLabel_16.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_16.TextSize = 13.000
+TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+
+InfiniteJump.Name = "Infinite Jump"
+InfiniteJump.Parent = Mains
+InfiniteJump.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+InfiniteJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJump.Position = UDim2.new(0.0511945412, 0, 0.196078435, 0)
+InfiniteJump.Size = UDim2.new(0, 14, 0, 14)
+InfiniteJump.Font = Enum.Font.SourceSans
+InfiniteJump.Text = ""
+InfiniteJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJump.TextSize = 14.000
+
+TextLabel_17.Parent = InfiniteJump
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_17.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_17.Font = Enum.Font.Code
+TextLabel_17.Text = "Infinite Jump"
+TextLabel_17.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_17.TextSize = 13.000
+TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiAim.Name = "Anti Aim"
+AntiAim.Parent = Mains
+AntiAim.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+AntiAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiAim.Position = UDim2.new(0.0511945412, 0, 0.343137264, 0)
+AntiAim.Size = UDim2.new(0, 14, 0, 14)
+AntiAim.Font = Enum.Font.SourceSans
+AntiAim.Text = ""
+AntiAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAim.TextSize = 14.000
+
+TextLabel_18.Parent = AntiAim
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_18.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_18.Font = Enum.Font.Code
+TextLabel_18.Text = "Anti Aim"
+TextLabel_18.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_18.TextSize = 13.000
+TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
+
+AntiAim_2.Name = "Anti Aim"
+AntiAim_2.Parent = Mains
+AntiAim_2.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+AntiAim_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AntiAim_2.Position = UDim2.new(0.0511945412, 0, 0.495098084, 0)
+AntiAim_2.Size = UDim2.new(0, 14, 0, 14)
+AntiAim_2.Font = Enum.Font.SourceSans
+AntiAim_2.Text = ""
+AntiAim_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAim_2.TextSize = 14.000
+
+TextLabel_19.Parent = AntiAim_2
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(1.69047642, 0, 0.285714298, 0)
+TextLabel_19.Size = UDim2.new(0, 187, 0, 6)
+TextLabel_19.Font = Enum.Font.Code
+TextLabel_19.Text = "Crosshair"
+TextLabel_19.TextColor3 = Color3.fromRGB(221, 221, 221)
+TextLabel_19.TextSize = 13.000
+TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
+
+UIAspectRatioConstraint.Parent = Frame
+UIAspectRatioConstraint.AspectRatio = 21.125
+
+ImageButton_2.Parent = Frame
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.Position = UDim2.new(0.925049365, 0, 0.0416666269, 0)
+ImageButton_2.Size = UDim2.new(0, 47, 0, 23)
+ImageButton_2.Image = "rbxassetid://7072725342"
+ImageButton_2.ImageColor3 = Color3.fromRGB(0, 170, 0)
+ImageButton_2.ScaleType = Enum.ScaleType.Fit
+
+-- Scripts:
+
+local function EJLZ_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Mains.Visible = true
+		script.Parent.Parent.Parent.Visuals.Visible = false
+		script.Parent.Parent.Parent.Weapon.Visible = false
+		script.Parent.Parent.Parent.Aimbots.Visible = false
+	end)
+end
+coroutine.wrap(EJLZ_fake_script)()
+local function CHFRQVH_fake_script() -- Visual.LocalScript 
+	local script = Instance.new('LocalScript', Visual)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Mains.Visible = false
+		script.Parent.Parent.Parent.Visuals.Visible = true
+		script.Parent.Parent.Parent.Weapon.Visible = false
+		script.Parent.Parent.Parent.Aimbots.Visible = false
+	end)
+end
+coroutine.wrap(CHFRQVH_fake_script)()
+local function AVDTX_fake_script() -- Weapon.LocalScript 
+	local script = Instance.new('LocalScript', Weapon)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Mains.Visible = false
+		script.Parent.Parent.Parent.Weapon.Visible = true
+		script.Parent.Parent.Parent.Visuals.Visible = false
+		script.Parent.Parent.Parent.Aimbots.Visible = false
+	end)
+end
+coroutine.wrap(AVDTX_fake_script)()
+local function GEMUV_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Mains.Visible = false
+		script.Parent.Parent.Parent.Weapon.Visible = false
+		script.Parent.Parent.Parent.Visuals.Visible = false
+		script.Parent.Parent.Parent.Aimbots.Visible = true
+	end)
+end
+coroutine.wrap(GEMUV_fake_script)()
+local function PIANAUI_fake_script() -- Slider.LocalScript 
+	local script = Instance.new('LocalScript', Slider)
+
+	function newSlider(title, callback, min, max, startPoint)
+		local dragging = false;
+		local sliderFrame = script.Parent.Parent.Slider
+		local slidingFrame = script.Parent.Slide
+		local titleLabel = script.Parent.stuff
+		local function slide(input)
+			local pos = UDim2.new(math.clamp((input.Position.X - sliderFrame.AbsolutePosition.X) / sliderFrame.AbsoluteSize.X, 0, 1), 0, 1, 0);
+			slidingFrame:TweenSize(pos, Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true);
+			local value = math.floor(((pos.X.Scale * max) / max) * (max - min) + min);
+			titleLabel.Text = title .. "  " .. tostring(value);
+			callback(value);
+		end;
+	
+		sliderFrame.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				dragging = true;
+			end;
+		end);
+	
+		sliderFrame.InputEnded:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				dragging = false;
+			end;
+		end);
+	
+		sliderFrame.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				slide(input);
+			end;
+		end);
+	
+		game:GetService("UserInputService").InputChanged:Connect(function(input)
+			if dragging and input.UserInputType == Enum.UserInputType.MouseMovement then
+				slide(input);
+			end;
+		end);
+	end;
+	newSlider("Fov:", function(value) fovcircle.Radius = value end, 1, 1000, 80);
+end
+coroutine.wrap(PIANAUI_fake_script)()
+local function RAKOYY_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+		local dwCamera = workspace.CurrentCamera
+		local dwRunService = game:GetService("RunService")
+		local dwUIS = game:GetService("UserInputService")
+		local dwEntities = game:GetService("Players")
+		local dwLocalPlayer = dwEntities.LocalPlayer
+		local dwMouse = dwLocalPlayer:GetMouse()
+	
+		getgenv().aimsettings = {
+			Aimbot = toggle,
+			Aiming = false,
+			Aimbot_AimPart = "",
+			Aimbot_TeamCheck = true,
+			Aimbot_Draw_FOV = false,
+			Aimbot_FOV_Radius = 10,
+			Aimbot_FOV_Color = Color3.fromRGB(255,255,255)
+		}
+	
+		local fovcircle = Drawing.new("Circle")
+		fovcircle.Visible = getgenv().aimsettings.Aimbot_Draw_FOV
+		fovcircle.Radius = getgenv().aimsettings.Aimbot_FOV_Radius
+		fovcircle.Color = getgenv().aimsettings.Aimbot_FOV_Color
+		fovcircle.Thickness = 1
+		fovcircle.Filled = false
+		fovcircle.Transparency = 1
+	
+		fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+	
+		dwUIS.InputBegan:Connect(function(i)
+			if i.UserInputType == Enum.UserInputType.MouseButton2 then
+				getgenv().aimsettings.Aiming = true
+			end
+		end)
+	
+		dwUIS.InputEnded:Connect(function(i)
+			if i.UserInputType == Enum.UserInputType.MouseButton2 then
+				getgenv().aimsettings.Aiming = false
+			end
+		end)
+	
+		dwRunService.RenderStepped:Connect(function()
+	
+			local dist = math.huge
+			local closest_char = nil
+	
+			if getgenv().aimsettings.Aiming then
+	
+				for i,v in next, dwEntities:GetChildren() do 
+	
+					if v ~= dwLocalPlayer and
+						v.Character and
+						v.Character:FindFirstChild("HumanoidRootPart") and
+						v.Character:FindFirstChild("Humanoid") and
+						v.Character:FindFirstChild("Humanoid").Health > 0 then
+	
+						if getgenv().aimsettings.Aimbot_TeamCheck == true and
+							v.Team ~= dwLocalPlayer.Team or
+							getgenv().aimsettings.Aimbot_TeamCheck == false then
+	
+							local char = v.Character
+							local char_part_pos, is_onscreen = dwCamera:WorldToViewportPoint(char[getgenv().aimsettings.Aimbot_AimPart].Position)
+	
+							if is_onscreen then
+	
+								local mag = (Vector2.new(dwMouse.X, dwMouse.Y) - Vector2.new(char_part_pos.X, char_part_pos.Y)).Magnitude
+	
+								if mag < dist and mag < getgenv().aimsettings.Aimbot_FOV_Radius then
+	
+									dist = mag
+									closest_char = char
+	
+								end
+							end
+						end
+					end
+				end
+	
+				if closest_char ~= nil and
+					closest_char:FindFirstChild("HumanoidRootPart") and
+					closest_char:FindFirstChild("Humanoid") and
+					closest_char:FindFirstChild("Humanoid").Health > 0 then
+	
+					dwCamera.CFrame = CFrame.new(dwCamera.CFrame.Position, closest_char[getgenv().aimsettings.Aimbot_AimPart].Position)
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(RAKOYY_fake_script)()
+local function RQCQ_fake_script() -- Speed_2.LocalScript 
+	local script = Instance.new('LocalScript', Speed_2)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+		local dwCamera = workspace.CurrentCamera
+		local dwRunService = game:GetService("RunService")
+		local dwUIS = game:GetService("UserInputService")
+		local dwEntities = game:GetService("Players")
+		local dwLocalPlayer = dwEntities.LocalPlayer
+		local dwMouse = dwLocalPlayer:GetMouse()
+	
+		getgenv().aimsettings = {
+			Aimbot = toggle,
+			Aiming = false,
+			Aimbot_AimPart = "Head",
+			Aimbot_TeamCheck = true,
+			Aimbot_Draw_FOV = false,
+			Aimbot_FOV_Radius = 10,
+			Aimbot_FOV_Color = Color3.fromRGB(255,255,255)
+		}
+	
+		local fovcircle = Drawing.new("Circle")
+		fovcircle.Visible = getgenv().aimsettings.Aimbot_Draw_FOV
+		fovcircle.Radius = getgenv().aimsettings.Aimbot_FOV_Radius
+		fovcircle.Color = getgenv().aimsettings.Aimbot_FOV_Color
+		fovcircle.Thickness = 1
+		fovcircle.Filled = false
+		fovcircle.Transparency = 1
+	
+		fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+	
+		dwUIS.InputBegan:Connect(function(i)
+			if i.UserInputType == Enum.UserInputType.MouseButton2 then
+				getgenv().aimsettings.Aiming = true
+			end
+		end)
+	
+		dwUIS.InputEnded:Connect(function(i)
+			if i.UserInputType == Enum.UserInputType.MouseButton2 then
+				getgenv().aimsettings.Aiming = false
+			end
+		end)
+	
+		dwRunService.RenderStepped:Connect(function()
+	
+			local dist = math.huge
+			local closest_char = nil
+	
+			if getgenv().aimsettings.Aiming then
+	
+				for i,v in next, dwEntities:GetChildren() do 
+	
+					if v ~= dwLocalPlayer and
+						v.Character and
+						v.Character:FindFirstChild("HumanoidRootPart") and
+						v.Character:FindFirstChild("Humanoid") and
+						v.Character:FindFirstChild("Humanoid").Health > 0 then
+	
+						if getgenv().aimsettings.Aimbot_TeamCheck == true and
+							v.Team ~= dwLocalPlayer.Team or
+							getgenv().aimsettings.Aimbot_TeamCheck == false then
+	
+							local char = v.Character
+							local char_part_pos, is_onscreen = dwCamera:WorldToViewportPoint(char[getgenv().aimsettings.Aimbot_AimPart].Position)
+	
+							if is_onscreen then
+	
+								local mag = (Vector2.new(dwMouse.X, dwMouse.Y) - Vector2.new(char_part_pos.X, char_part_pos.Y)).Magnitude
+	
+								if mag < dist and mag < getgenv().aimsettings.Aimbot_FOV_Radius then
+	
+									dist = mag
+									closest_char = char
+	
+								end
+							end
+						end
+					end
+				end
+	
+				if closest_char ~= nil and
+					closest_char:FindFirstChild("HumanoidRootPart") and
+					closest_char:FindFirstChild("Humanoid") and
+					closest_char:FindFirstChild("Humanoid").Health > 0 then
+	
+					dwCamera.CFrame = CFrame.new(dwCamera.CFrame.Position, closest_char[getgenv().aimsettings.Aimbot_AimPart].Position)
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(RQCQ_fake_script)()
+local function OPETE_fake_script() -- Speed_3.LocalScript 
+	local script = Instance.new('LocalScript', Speed_3)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+		local dwCamera = workspace.CurrentCamera
+		local dwRunService = game:GetService("RunService")
+		local dwUIS = game:GetService("UserInputService")
+		local dwEntities = game:GetService("Players")
+		local dwLocalPlayer = dwEntities.LocalPlayer
+		local dwMouse = dwLocalPlayer:GetMouse()
+	
+		getgenv().aimsettings = {
+			Aimbot = toggle,
+			Aiming = false,
+			Aimbot_AimPart = "Uppertorso",
+			Aimbot_TeamCheck = true,
+			Aimbot_Draw_FOV = false,
+			Aimbot_FOV_Radius = 10,
+			Aimbot_FOV_Color = Color3.fromRGB(255,255,255)
+		}
+	
+		local fovcircle = Drawing.new("Circle")
+		fovcircle.Visible = getgenv().aimsettings.Aimbot_Draw_FOV
+		fovcircle.Radius = getgenv().aimsettings.Aimbot_FOV_Radius
+		fovcircle.Color = getgenv().aimsettings.Aimbot_FOV_Color
+		fovcircle.Thickness = 1
+		fovcircle.Filled = false
+		fovcircle.Transparency = 1
+	
+		fovcircle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+	
+		dwUIS.InputBegan:Connect(function(i)
+			if i.UserInputType == Enum.UserInputType.MouseButton2 then
+				getgenv().aimsettings.Aiming = true
+			end
+		end)
+	
+		dwUIS.InputEnded:Connect(function(i)
+			if i.UserInputType == Enum.UserInputType.MouseButton2 then
+				getgenv().aimsettings.Aiming = false
+			end
+		end)
+	
+		dwRunService.RenderStepped:Connect(function()
+	
+			local dist = math.huge
+			local closest_char = nil
+	
+			if getgenv().aimsettings.Aiming then
+	
+				for i,v in next, dwEntities:GetChildren() do 
+	
+					if v ~= dwLocalPlayer and
+						v.Character and
+						v.Character:FindFirstChild("HumanoidRootPart") and
+						v.Character:FindFirstChild("Humanoid") and
+						v.Character:FindFirstChild("Humanoid").Health > 0 then
+	
+						if getgenv().aimsettings.Aimbot_TeamCheck == true and
+							v.Team ~= dwLocalPlayer.Team or
+							getgenv().aimsettings.Aimbot_TeamCheck == false then
+	
+							local char = v.Character
+							local char_part_pos, is_onscreen = dwCamera:WorldToViewportPoint(char[getgenv().aimsettings.Aimbot_AimPart].Position)
+	
+							if is_onscreen then
+	
+								local mag = (Vector2.new(dwMouse.X, dwMouse.Y) - Vector2.new(char_part_pos.X, char_part_pos.Y)).Magnitude
+	
+								if mag < dist and mag < getgenv().aimsettings.Aimbot_FOV_Radius then
+	
+									dist = mag
+									closest_char = char
+	
+								end
+							end
+						end
+					end
+				end
+	
+				if closest_char ~= nil and
+					closest_char:FindFirstChild("HumanoidRootPart") and
+					closest_char:FindFirstChild("Humanoid") and
+					closest_char:FindFirstChild("Humanoid").Health > 0 then
+	
+					dwCamera.CFrame = CFrame.new(dwCamera.CFrame.Position, closest_char[getgenv().aimsettings.Aimbot_AimPart].Position)
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(OPETE_fake_script)()
+local function VJNWWZI_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	local Aimpart = script.Parent.Parent.Aimpart
+	script.Parent.MouseButton1Click:Connect(function()
+		if Aimpart.Visible == false then
+			Aimpart.Visible = true 
+		else
+			Aimpart.Visible = false
+		end 
+	end)
+end
+coroutine.wrap(VJNWWZI_fake_script)()
+local function IOGBEZV_fake_script() -- FpsLabel.LocalScript 
+	local script = Instance.new('LocalScript', FpsLabel)
+
+	local RunService = game:GetService("RunService")
+	local FpsLabel = script.Parent
+	
+	local TimeFunction = RunService:IsRunning() and time or os.clock
+	
+	local LastIteration, Start
+	local FrameUpdateTable = {}
+	
+	local function HeartbeatUpdate()
+		LastIteration = TimeFunction()
+		for Index = #FrameUpdateTable, 1, -1 do
+			FrameUpdateTable[Index + 1] = FrameUpdateTable[Index] >= LastIteration - 1 and FrameUpdateTable[Index] or nil
+		end
+	
+		FrameUpdateTable[1] = LastIteration
+		FpsLabel.Text = tostring(math.floor(TimeFunction() - Start >= 1 and #FrameUpdateTable or #FrameUpdateTable / (TimeFunction() - Start))) .. " FPS"
+	end
+	
+	Start = TimeFunction()
+	RunService.Heartbeat:Connect(HeartbeatUpdate)
+end
+coroutine.wrap(IOGBEZV_fake_script)()
+local function DJQHELV_fake_script() -- Boxes.LocalScript 
+	local script = Instance.new('LocalScript', Boxes)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+	
+	
+			local lplr = game.Players.LocalPlayer
+			local camera = game:GetService("Workspace").CurrentCamera
+			local CurrentCamera = workspace.CurrentCamera
+			local worldToViewportPoint = CurrentCamera.worldToViewportPoint
+	
+			local HeadOff = Vector3.new(0, 0.5, 0)
+			local LegOff = Vector3.new(0,3,0)
+	
+			for i,v in pairs(game.Players:GetChildren()) do
+				local BoxOutline = Drawing.new("Square")
+				BoxOutline.Visible = false
+				BoxOutline.Color = Color3.new(1, 1, 1)
+				BoxOutline.Thickness = 1
+				BoxOutline.Transparency = 0.8
+				BoxOutline.Filled = false
+	
+				local Box = Drawing.new("Square")
+				Box.Visible = false
+				Box.Color = Color3.new(1, 1, 1)
+				Box.Thickness = 1
+				Box.Transparency = 0.8
+				Box.Filled = false
+	
+				function boxesp()
+					game:GetService("RunService").RenderStepped:Connect(function()
+						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+							local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+							local RootPart = v.Character.HumanoidRootPart
+							local Head = v.Character.Head
+							local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
+							local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
+							local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
+	
+							if onScreen then
+								BoxOutline.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
+								BoxOutline.Visible = true
+	
+								Box.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
+								Box.Visible = true
+	
+								if v.TeamColor == lplr.TeamColor then
+									BoxOutline.Visible = false
+									Box.Visible = false
+								else
+									BoxOutline.Visible = true
+									Box.Visible = true
+								end
+	
+							else
+								BoxOutline.Visible = false
+								Box.Visible = false
+							end
+						else
+							BoxOutline.Visible = false
+							Box.Visible = false
+						end
+					end)
+				end
+				coroutine.wrap(boxesp)()
+			end
+	
+			game.Players.PlayerAdded:Connect(function(v)
+				local BoxOutline = Drawing.new("Square")
+				BoxOutline.Visible = false
+				BoxOutline.Color = Color3.new(1, 1, 1)
+				BoxOutline.Thickness = 1
+				BoxOutline.Transparency = 0.8
+				BoxOutline.Filled = false
+	
+				local Box = Drawing.new("Square")
+				Box.Visible = false
+				Box.Color = Color3.new(1, 1, 1)
+				Box.Thickness = 1
+				Box.Transparency = 0.8
+				Box.Filled = false
+	
+				function boxesp()
+					game:GetService("RunService").RenderStepped:Connect(function()
+						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+							local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+							local RootPart = v.Character.HumanoidRootPart
+							local Head = v.Character.Head
+							local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
+							local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
+							local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
+	
+							if onScreen then
+								BoxOutline.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
+								BoxOutline.Visible = true
+	
+								Box.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
+								Box.Visible = true
+	
+								if v.TeamColor == lplr.TeamColor then
+									BoxOutline.Visible = false
+									Box.Visible = false
+								else
+									BoxOutline.Visible = true
+									Box.Visible = true
+								end
+	
+							else
+								BoxOutline.Visible = false
+								Box.Visible = false
+							end
+						else
+							BoxOutline.Visible = false
+							Box.Visible = false
+						end
+					end)
+				end
+				coroutine.wrap(boxesp)()
+			end)
+		end
+		if toggle == false then 
+			Box:Remove()
+		end
+	end)
+end
+coroutine.wrap(DJQHELV_fake_script)()
+local function EKJM_fake_script() -- Chams.LocalScript 
+	local script = Instance.new('LocalScript', Chams)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			-- Made by Stretch
+			-- Have fun ._. !!!
+	
+			local localPlayer=game.Players.LocalPlayer
+	
+			function highlightModel(objObject)
+				for i,v in pairs(objObject:children())do
+					if v:IsA'BasePart'and v.Name~='HumanoidRootPart'then
+						local bHA=Instance.new('BoxHandleAdornment',v)
+						bHA.Adornee=v
+						bHA.Size= v.Name=='Head' and Vector3.new(1.25,1.25,1.25) or v.Size
+						bHA.Color3=v.Name=='Head'and Color3.new(0, 0.545098, 0)or v.Name=='Torso'and Color3.new(0, 0.545098, 0)or Color3.new(0, 0.545098, 0)
+						bHA.Transparency=.2
+						bHA.ZIndex=1
+						bHA.AlwaysOnTop=true
+					end
+					if #v:children()>0 then
+						highlightModel(v)
+					end
+				end
+			end
+	
+			function unHighlightModel(objObject)
+				for i,v in pairs(objObject:children())do
+					if v:IsA'BasePart' and v:findFirstChild'BoxHandleAdornment' then
+						v.BoxHandleAdornment:Destroy()
+					end
+					if #v:children()>0 then
+						unHighlightModel(v)
+					end
+				end
+			end
+	
+			function sortTeamHighlights(objPlayer)
+				repeat wait() until objPlayer.Character
+				if objPlayer.TeamColor~=localPlayer.TeamColor then
+					highlightModel(objPlayer.Character)
+				else
+					unHighlightModel(objPlayer.Character)
+				end
+				if objPlayer~=localPlayer then
+					objPlayer.Changed:connect(function(strProp)
+						if strProp=='TeamColor'then
+							if objPlayer.TeamColor~=localPlayer.TeamColor then
+								unHighlightModel(objPlayer.Character)
+								highlightModel(objPlayer.Character)
+							else
+								unHighlightModel(objPlayer.Character)
+							end
+						end
+					end)
+				else
+					objPlayer.Changed:connect(function(strProp)
+						if strProp=='TeamColor'then
+							wait(.5)
+							for i,v in pairs(game.Players:GetPlayers())do
+								unHighlightModel(v)
+								if v.TeamColor~=localPlayer.TeamColor then
+									highlightModel(v.Character)
+								end
+							end
+						end
+					end)
+				end
+			end
+	
+			for i,v in pairs(game.Players:GetPlayers())do
+				v.CharacterAdded:connect(function()
+					sortTeamHighlights(v)
+				end)
+				sortTeamHighlights(v)
+			end
+			game.Players.PlayerAdded:connect(function(objPlayer)
+				objPlayer.CharacterAdded:connect(function(objChar)
+					sortTeamHighlights(objPlayer)
+				end)
+			end)
+		end
+		if toggle == false then 
+			for i,v in pairs(game.Players:GetPlayers())do
+				v.CharacterAdded:connect(function()
+					unHighlightModel(v.Character)
+				end)
+			end
+		end
+	end)
+end
+coroutine.wrap(EKJM_fake_script)()
+local function FACUKOU_fake_script() -- Tracers.LocalScript 
+	local script = Instance.new('LocalScript', Tracers)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			local loPlayer = game.Players.LocalPlayer
+			local camera = game:GetService("Workspace").CurrentCamera
+			local CurrentCamera = workspace.CurrentCamera
+			local worldToViewportPoint = CurrentCamera.worldToViewportPoint
+	
+			_G.TeamCheck = true
+	
+			for i,v in pairs(game.Players:GetChildren()) do
+				local Tracer = Drawing.new("Line")
+				Tracer.Visible = true
+				Tracer.Color = Color3.new(0, 170, 0)
+				Tracer.Thickness = 1
+				Tracer.Transparency = 1
+	
+				function tracer()
+					game:GetService("RunService").RenderStepped:Connect(function()
+						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= loPlayer and v.Character.Humanoid.Health > 0 then
+							local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+							if OnScreen then
+								Tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 1)
+								Tracer.To = Vector2.new(Vector.X, Vector.Y)
+	
+								if _G.TeamCheck and v.TeamColor == loPlayer.TeamColor then
+	
+									Tracer.Visible = false
+								else
+	
+									Tracer.Visible = true
+								end
+							else
+								Tracer.Visible = false
+							end
+						else
+							Tracer.Visible = false
+						end
+					end)
+				end
+				coroutine.wrap(tracer)()
+			end
+	
+			game.Players.PlayerAdded:Connect(function(v)
+				local Tracer = Drawing.New("Line")
+				Tracer.Visible = true
+				Tracer.Color = Color3.new(0, 170, 0)
+				Tracer.Thickness = 1
+				Tracer.Transparency = 1
+	
+				function tracer()
+					game:GetService("RunService").RenderStepped:Connect(function()
+						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= loPlayer and v.Character.Humanoid.Health > 0 then
+							local Vector, OnScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+							if OnScreen then
+								Tracer.From = Vector2.new(camera.ViewportSize.X / 2, camera.ViewportSize.Y / 1)
+								Tracer.To = Vector2.new(Vector.X, Vector.Y)
+	
+								if _G.TeamCheck and v.TeamColor == loPlayer.TeamColor then
+	
+									Tracer.Visible = false
+								else
+	
+									Tracer.Visible = true
+								end
+							else
+								Tracer.Visible = false
+							end
+						else
+							Tracer.Visible = false
+						end
+					end)
+				end
+				coroutine.wrap(tracer)()
+			end)
+		end
+	end)
+	if toggle == false then
+	
+	end
+end
+coroutine.wrap(FACUKOU_fake_script)()
+local function OBZLUJ_fake_script() -- Healthbar.LocalScript 
+	local script = Instance.new('LocalScript', Healthbar)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			local lplr = game.Players.LocalPlayer
+			local camera = game:GetService("Workspace").CurrentCamera
+			local CurrentCamera = workspace.CurrentCamera
+			local worldToViewportPoint = CurrentCamera.worldToViewportPoint
+	
+			local HeadOff = Vector3.new(0, 0.5, 0)
+			local LegOff = Vector3.new(0,3,0)
+	
+			for i,v in pairs(game.Players:GetChildren()) do
+				local BoxOutline = Drawing.new("Square")
+				BoxOutline.Visible = false
+				BoxOutline.Color = Color3.new(0,0,0)
+				BoxOutline.Thickness = 3
+				BoxOutline.Transparency = 1
+				BoxOutline.Filled = false
+	
+				local Box = Drawing.new("Square")
+				Box.Visible = false
+				Box.Color = Color3.new(1,1,1)
+				Box.Thickness = 1
+				Box.Transparency = 1
+				Box.Filled = false
+	
+				local HealthBarOutline = Drawing.new("Square")
+				HealthBarOutline.Thickness = 3
+				HealthBarOutline.Filled = false
+				HealthBarOutline.Color = Color3.new(0,0,0)
+				HealthBarOutline.Transparency = 1
+				HealthBarOutline.Visible = false
+	
+				local HealthBar = Drawing.new("Square")
+				HealthBar.Thickness = 1
+				HealthBar.Filled = false
+				HealthBar.Transparency = 1
+				HealthBar.Visible = false
+	
+				function boxesp()
+					game:GetService("RunService").RenderStepped:Connect(function()
+						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+							local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+							local RootPart = v.Character.HumanoidRootPart
+							local Head = v.Character.Head
+							local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
+							local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
+							local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
+	
+							if onScreen then
+								BoxOutline.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
+								BoxOutline.Visible = true
+	
+								Box.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
+								Box.Visible = true
+	
+								HealthBarOutline.Size = Vector2.new(2, HeadPosition.Y - LegPosition.Y)
+								HealthBarOutline.Position = BoxOutline.Position - Vector2.new(6,0)
+								HealthBarOutline.Visible = true
+	
+								HealthBar.Size = Vector2.new(2, (HeadPosition.Y - LegPosition.Y) / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / math.clamp(game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value, 0, game:GetService("Players")[v.Character.Name].NRPBS:WaitForChild("MaxHealth").Value)))
+								HealthBar.Position = Vector2.new(Box.Position.X - 6, Box.Position.Y + (1 / HealthBar.Size.Y))
+								HealthBar.Color = Color3.fromRGB(255 - 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 0)
+								HealthBar.Visible = true
+	
+								if v.TeamColor == lplr.TeamColor then
+									--- Our Team
+									BoxOutline.Visible = false
+									Box.Visible = false
+									HealthBarOutline.Visible = false
+									HealthBar.Visible = false
+								else
+									---Enemy Team
+									BoxOutline.Visible = false
+									Box.Visible = false
+									HealthBarOutline.Visible = true
+									HealthBar.Visible = true
+								end
+	
+							else
+								BoxOutline.Visible = false
+								Box.Visible = false
+								HealthBarOutline.Visible = false
+								HealthBar.Visible = false
+							end
+						else
+							BoxOutline.Visible = false
+							Box.Visible = false
+							HealthBarOutline.Visible = false
+							HealthBar.Visible = false
+						end
+					end)
+				end
+				coroutine.wrap(boxesp)()
+			end
+	
+			game.Players.PlayerAdded:Connect(function(v)
+				local BoxOutline = Drawing.new("Square")
+				BoxOutline.Visible = false
+				BoxOutline.Color = Color3.new(0,0,0)
+				BoxOutline.Thickness = 3
+				BoxOutline.Transparency = 1
+				BoxOutline.Filled = false
+	
+				local Box = Drawing.new("Square")
+				Box.Visible = false
+				Box.Color = Color3.new(1,1,1)
+				Box.Thickness = 1
+				Box.Transparency = 1
+				Box.Filled = false
+	
+				local HealthBarOutline = Drawing.new("Square")
+				HealthBarOutline.Thickness = 3
+				HealthBarOutline.Filled = false
+				HealthBarOutline.Color = Color3.new(0,0,0)
+				HealthBarOutline.Transparency = 1
+				HealthBarOutline.Visible = false
+	
+				local HealthBar = Drawing.new("Square")
+				HealthBar.Thickness = 1
+				HealthBar.Filled = false
+				HealthBar.Transparency = 1
+				HealthBar.Visible = false
+	
+				function boxesp()
+					game:GetService("RunService").RenderStepped:Connect(function()
+						if v.Character ~= nil and v.Character:FindFirstChild("Humanoid") ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v ~= lplr and v.Character.Humanoid.Health > 0 then
+							local Vector, onScreen = camera:worldToViewportPoint(v.Character.HumanoidRootPart.Position)
+	
+							local RootPart = v.Character.HumanoidRootPart
+							local Head = v.Character.Head
+							local RootPosition, RootVis = worldToViewportPoint(CurrentCamera, RootPart.Position)
+							local HeadPosition = worldToViewportPoint(CurrentCamera, Head.Position + HeadOff)
+							local LegPosition = worldToViewportPoint(CurrentCamera, RootPart.Position - LegOff)
+	
+							if onScreen then
+								BoxOutline.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								BoxOutline.Position = Vector2.new(RootPosition.X - BoxOutline.Size.X / 2, RootPosition.Y - BoxOutline.Size.Y / 2)
+								BoxOutline.Visible = true
+	
+								Box.Size = Vector2.new(1000 / RootPosition.Z, HeadPosition.Y - LegPosition.Y)
+								Box.Position = Vector2.new(RootPosition.X - Box.Size.X / 2, RootPosition.Y - Box.Size.Y / 2)
+								Box.Visible = true
+	
+								HealthBarOutline.Size = Vector2.new(2, HeadPosition.Y - LegPosition.Y)
+								HealthBarOutline.Position = BoxOutline.Position - Vector2.new(6,0)
+								HealthBarOutline.Visible = true
+	
+								HealthBar.Size = Vector2.new(2, (HeadPosition.Y - LegPosition.Y) / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / math.clamp(game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value, 0, game:GetService("Players")[v.Character.Name].NRPBS:WaitForChild("MaxHealth").Value)))
+								HealthBar.Position = Vector2.new(Box.Position.X - 6, Box.Position.Y + (1/HealthBar.Size.Y))
+								HealthBar.Color = Color3.fromRGB(255 - 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 255 / (game:GetService("Players")[v.Character.Name].NRPBS["MaxHealth"].Value / game:GetService("Players")[v.Character.Name].NRPBS["Health"].Value), 0)                    
+								HealthBar.Visible = true
+	
+								if v.TeamColor == lplr.TeamColor then
+									--- Our Team
+									BoxOutline.Visible = false
+									Box.Visible = false
+									HealthBarOutline.Visible = false
+									HealthBar.Visible = false
+								else
+									---Enemy Team
+									BoxOutline.Visible = true
+									Box.Visible = true
+									HealthBarOutline.Visible = true
+									HealthBar.Visible = true
+								end
+	
+							else
+								BoxOutline.Visible = false
+								Box.Visible = false
+								HealthBarOutline.Visible = false
+								HealthBar.Visible = false
+							end
+						else
+							BoxOutline.Visible = false
+							Box.Visible = false
+							HealthBarOutline.Visible = false
+							HealthBar.Visible = false
+						end
+					end)
+				end
+				coroutine.wrap(boxesp)()
+			end)
+		end
+		if toggle == false then 
+			--false here
+		end
+	end)
+end
+coroutine.wrap(OBZLUJ_fake_script)()
+local function JSJPMAT_fake_script() -- Healthbar_2.LocalScript 
+	local script = Instance.new('LocalScript', Healthbar_2)
+
+	toggle = false
+	script.Parent.MouseButton1Down:Connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			Mouse = game.Players.LocalPlayer:GetMouse()
+			function WTS(obj)
+				local screen = workspace.CurrentCamera:WorldToViewportPoint(obj)
+				return Vector2.new(screen.x, screen.y)
+			end
+	
+			fovcircle = Drawing.new("Circle")
+			fovcircle.Visible = true
+			fovcircle.Radius = 100
+			fovcircle.Color = Color3.new(0, 0.364706, 0)
+			fovcircle.NumSides = 8
+			fovcircle.Thickness = 1
+			fovcircle.Filled = false
+			fovcircle.Transparency = 1
+	
+			game.RunService.RenderStepped:Connect(function()
+				fovcircle.Position = WTS(Mouse.hit.p)
+			end) 
+			if toggle == false then
+				
+			end
+		end
+	end)
+end
+coroutine.wrap(JSJPMAT_fake_script)()
+local function ZVRP_fake_script() -- Recoil.LocalScript 
+	local script = Instance.new('LocalScript', Recoil)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			for i,v in next, game.ReplicatedStorage.Weapons:GetChildren() do
+				for i,c in next, v:GetChildren() do -- for some reason, using GetDescendants dsent let you modify weapon ammo, so I do this instead
+					for i,x in next, getconnections(c.Changed) do
+						x:Disable() -- probably not needed
+					end
+					if c.Name == "AReload" or c.Name == "RecoilControl" or c.Name == "EReload" or c.Name == "SReload" or c.Name == "ReloadTime" or c.Name == "EquipTime" or c.Name == "Spread" or c.Name == "MaxSpread" then
+						c.Value = 0
+					end
+				end
+			end
+		end
+		if toggle == false then 
+			for i,v in next, game.ReplicatedStorage.Weapons:GetChildren() do
+				for i,c in next, v:GetChildren() do -- for some reason, using GetDescendants dsent let you modify weapon ammo, so I do this instead
+					for i,x in next, getconnections(c.Changed) do
+						x:Disable() -- probably not needed
+					end
+					if c.Name == "AReload" or c.Name == "RecoilControl" or c.Name == "EReload" or c.Name == "SReload" or c.Name == "ReloadTime" or c.Name == "EquipTime" or c.Name == "Spread" or c.Name == "MaxSpread" then
+						c.Value = 2
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ZVRP_fake_script)()
+local function TWYMMB_fake_script() -- Speed_4.LocalScript 
+	local script = Instance.new('LocalScript', Speed_4)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			_G.WS = "50";
+			local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+			Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+			end)
+			Humanoid.WalkSpeed = _G.WS;
+		end
+		if toggle == false then 
+			_G.WS = "20";
+			local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+			Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+				Humanoid.WalkSpeed = _G.WS;
+			end)
+			Humanoid.WalkSpeed = _G.WS;
+		end
+	end)
+end
+coroutine.wrap(TWYMMB_fake_script)()
+local function YSCQKEH_fake_script() -- InfiniteJump.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteJump)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			local InfiniteJumpEnabled = toggle
+			game:GetService("UserInputService").JumpRequest:connect(function()
+				if InfiniteJumpEnabled then
+					game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+				end
+			end)
+		end
+	end)
+end
+coroutine.wrap(YSCQKEH_fake_script)()
+local function IHZP_fake_script() -- AntiAim.LocalScript 
+	local script = Instance.new('LocalScript', AntiAim)
+
+	toggle = false
+	script.Parent.MouseButton1Down:connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/The3Bakers4565/Spicy-Bagel/main/Other_Scripts/Arsenal/Anti_Aim.lua"))()
+	 end
+	end)
+end
+coroutine.wrap(IHZP_fake_script)()
+local function RFAKM_fake_script() -- AntiAim_2.LocalScript 
+	local script = Instance.new('LocalScript', AntiAim_2)
+
+	toggle = false
+	script.Parent.MouseButton1Down:Connect(function()
+	
+		if toggle == true then 
+			toggle = false 
+		else
+			toggle = true
+		end
+		if toggle == true then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(0, 170, 0)
+		end
+		if toggle == false then 
+			script.Parent.BackgroundColor3 = Color3.fromRGB(125, 0, 0)
+		end
+	
+		if toggle == true then
+			-- Custom Crosshair by zzerexx#3970
+			getgenv().CrosshairSettings = {
+				Color = Color3.fromRGB(0, 170, 0),
+				RainbowColor = false,
+				Opacity = 1,
+				Length = 12, -- Length of each line
+				Thickness = 2, -- Thickness of each line
+				Offset = 0, -- Offset from the middle point
+				Dot = false, -- not recommended
+				FollowCursor = false, -- Crosshair follows the cursor
+				HideMouseIcon = true, -- Hides the mouse icon, set to 0 to ignore
+				HideGameCrosshair = true, -- Hides the current game's crosshair (if its supported)
+				ToggleKey = Enum.KeyCode.RightAlt, -- Toggles crosshair visibility
+			} -- v1.2.1
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/zzerexx/scripts/main/CustomCrosshair.lua", true))()
+		end
+		if toggle == false then
+		end
+	end)
+end
+coroutine.wrap(RFAKM_fake_script)()
+local function VPHQV_fake_script() -- ImageButton_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(VPHQV_fake_script)()
