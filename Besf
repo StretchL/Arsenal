@@ -13,11 +13,10 @@
                                                    ]]
 
 
-
-
 local HazeLocalChangerLol1_ = loadstring(game:HttpGet("https://pastebin.com/raw/FprPCBs8", true))()
 local HazeLocalChangerLol2_ = loadstring(game:HttpGet("https://pastebin.com/raw/FprPCBs8", true))()
 local HazeLocalChangerLol3_ = loadstring(game:HttpGet("https://pastebin.com/raw/FprPCBs8", true))()
+
 
 local HazeLocalChangerLol4_ = Instance.new("ScreenGui")
 local HazeLocalChangerLol5_ = Instance.new("Frame")
@@ -917,7 +916,6 @@ HazeLocalChangerLol102_.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
 HazeLocalChangerLol102_.BorderSizePixel = 0
 HazeLocalChangerLol102_.Position = UDim2.new(0.0256916992, 0, 0.07929755, 0)
 HazeLocalChangerLol102_.Size = UDim2.new(0, 235, 0, 338)
-HazeLocalChangerLol102_.CanvasPosition = Vector2.new(0, 41)
 HazeLocalChangerLol102_.CanvasSize = UDim2.new(0, 0, 1, 0)
 HazeLocalChangerLol102_.ScrollBarThickness = 2
 
@@ -2653,7 +2651,7 @@ local function HazeLocalChangerLol161_func() -- Slider_2.LocalScript
 	
 		local function HazeLocalChangerLol380_func(HazeLocalChangerLol381_arg0)
 			local HazeLocalChangerLol382_ = UDim2.new(math.clamp((HazeLocalChangerLol381_arg0.Position.X - HazeLocalChangerLol377_.AbsolutePosition.X) / HazeLocalChangerLol377_.AbsoluteSize.X, 0, 1), 0, 1, 0);
-			HazeLocalChangerLol378_:TweenSize(HazeLocalChangerLol382_, Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.2, true);
+			HazeLocalChangerLol378_:TweenSize(HazeLocalChangerLol382_, Enum.EasingDirection.Out, Enum.EasingStyle.Quad, 0.1, true);
 			local HazeLocalChangerLol383_ = math.floor(((HazeLocalChangerLol382_.X.Scale * HazeLocalChangerLol374_arg3) / HazeLocalChangerLol374_arg3) * (HazeLocalChangerLol374_arg3 - HazeLocalChangerLol373_arg2) + HazeLocalChangerLol373_arg2);
 			HazeLocalChangerLol379_.Text = HazeLocalChangerLol371_arg0 .. " | " .. tostring(HazeLocalChangerLol383_);
 			HazeLocalChangerLol372_arg1(HazeLocalChangerLol383_);
